@@ -1,0 +1,2 @@
+- [Translation tool runtime](translation-tool-runtime.md) — use the supported React/Vite artifact unless Python/Streamlit is explicitly required.
+- [Streamlit artifact preview routing](streamlit-artifact-preview.md) — nested Streamlit previews need an artifact service plus explicit `_stcore` proxy paths for the live chat connection.

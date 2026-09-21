@@ -1,0 +1,19 @@
+kind = "web"
+previewPath = "/store-faq-chatbot/"
+title = "Task 2 Store FAQ Chatbot"
+description = "A Python and Streamlit FAQ chatbot that uses NLTK preprocessing, TF-IDF vectors, and cosine similarity to answer common online-store questions from editable FAQ data."
+version = "1.0.0"
+id = "artifacts/store-faq-chatbot-preview"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/store-faq-chatbot/", "/store-faq-chatbot/_stcore", "/store-faq-chatbot/static" ]
+localPort = 18945
+
+[services.development]
+run = 'streamlit run ../store-faq-chatbot/app.py --server.port "$PORT" --server.address 0.0.0.0 --server.baseUrlPath "$BASE_PATH"'
+
+[services.env]
+PORT = "18945"
+BASE_PATH = "/store-faq-chatbot/"
